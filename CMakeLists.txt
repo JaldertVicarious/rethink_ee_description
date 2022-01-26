@@ -10,7 +10,7 @@ find_package(catkin REQUIRED)
 
 catkin_package()
 
-foreach(dir meshes urdf)
+foreach(dir meshes)
    install(DIRECTORY ${dir}/
       DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/${dir})
 endforeach(dir)
